@@ -1,0 +1,856 @@
+/* Общие классы */
+
+*{
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.container{
+    margin: auto;
+    width: 1200px;
+    min-width: 1200px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+body{
+    margin: 0px;
+}
+
+/* Классы header */
+.header{
+    padding-top: 35px;
+    background-color: rgba(255, 221, 167, 1);
+}
+
+.headerNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerNavMenu{
+    width: 685px;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(45, 45, 45, 1);
+    list-style-type: none;
+}
+
+#headerNavContacsNumber{
+
+    position: relative;
+    padding-left: 25px;
+    background-image: expression(this.runtimeStyle.backgroundImage="none",
+    this.innerHTML = '<img alt="" src="img/phone.svg"  id="headerNavContacsNumberImg" class = "headerNavContacsNumberImg">'+this.innerHTML);
+}
+
+#headerNavContacsNumber::before,
+#headerNavContacsNumberImg
+{
+    content: url(img/phone.svg);
+    position: absolute;
+    top: 0px;
+    clip: rect(4px 15px 18px 0);
+    left: -2px; 
+}
+
+.headerNavContacsNumber{
+    display: flex;
+    gap: 5px;
+}
+
+.headerNavContacsNumberTxt{
+    font-weight: bold;
+}
+
+.headerNavContacsOrder{
+    display: flex;
+    justify-content: end;
+    color: rgba(45, 45, 45, 1);
+}
+
+.mainFirst{
+    background-color: rgba(255, 221, 167, 1);
+}
+
+.mainFirstContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainFirstContentTxt{
+    font-size: 32px;
+    width: 448px;
+    z-index: 100;
+}
+
+.mainFirstContentImgDiv{
+    width: 974px;
+    height: 606px;
+    margin-left: -180px;
+    background-image: url("img/rabs.jpg");
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.mainFirstContentImgDivColor{
+    width: 100%;
+    height: 100%;
+    background: rgba(241, 169, 52, 0.43);
+    position: absolute;
+}
+
+/* Услуги */
+
+.servaces{
+    margin-top: 39px;
+    background-image: url("img/servicesline.svg");
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom:100px;
+}   
+
+.servacesContentH{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 36px;    
+    padding-bottom: 100px;
+}
+
+.servacesContentRow{
+    padding-bottom: 160px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.servacesContentRow2{
+    padding-bottom: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.servacesContentRowImgDiv{
+    height: 100px;
+}
+
+.servacesContentRowImg{
+    height: 250px;
+}
+
+
+.servacesContentRowContentH{
+    font-size: 24px;
+    font-weight: bold;
+    width: 575px;
+    padding-top: 75px;
+    padding-bottom: 34px;
+}
+
+.servacesContentRowContentTxt{
+    font-size: 16px;
+    width: 575px;
+    padding-bottom: 20px;
+}
+
+.servacesContentRowContentBtnDiv{
+    display: flex;
+    justify-content: end;
+}
+
+.servacesContentRowContentBtn{
+    width: 160px;
+    height: 39px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    border: 2px solid rgba(220, 145, 27, 1);
+    font-size: 14px;
+}
+
+.servacesContentRowContentBtn:hover{
+    background-color: rgba(220, 145, 27, 1);
+    border: 2px solid rgba(220, 145, 27, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+/* rew стили */
+
+.reviews{
+    background-color: rgba(62, 62, 61, 1);
+}
+
+.reviewsContent{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -120px;
+}
+
+.reviewsContentSliderH{
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    color: #fff;
+    padding-top: 125px;
+    padding-bottom: 106px;
+}
+
+.reviewsContentSliderRow{
+    width: 820px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviewsContentSliderRowImgDiv{
+    height: 242;
+}
+
+.hidden{
+    display: none;
+}
+
+.reviewsContentSliderComtrolMenu{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.reviewsContentSliderComtrolMenuEl{
+    width: 42px;
+    height: 42px;
+    background-color: rgba(220, 145, 27, 1);
+    border: 2px solid rgba(220, 145, 27, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: black;
+    cursor: pointer;
+}
+
+.reviewsContentSliderComtrolMenuEl:hover{
+    color:  rgba(220, 145, 27, 1);
+    background-color: rgba(220, 145, 27, 0);
+    svg path{
+        stroke: rgba(220, 145, 27, 1);
+    }
+}
+
+.reviewsContentImg{
+    width: 805px;
+    height: 805px;
+    margin-left: -200px;
+}
+
+.reviewsLink{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.reviewsLinkA{
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Стили проектов */
+
+.projectsContentEl{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+.projectsContentH{
+    font-weight: bold;
+    font-size: 36px;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+.projectsContentElHeader{
+    z-index: 12;
+    height: 312px;
+    position: relative;
+}
+
+.projectsContentElHeaderH{
+    font-size: 36px;
+    font-weight: bold;
+    width: 500px;
+    position: absolute;
+    bottom: 123px;
+}
+
+.projectsContentElHeaderDate{
+    position: absolute;
+    bottom: 0px;
+}
+
+.projectsContentElMid{
+    background-color:  rgba(220, 145, 27, 1);
+    width: 556px;
+    height: 312px;
+    margin-left: 140px;
+}
+
+.projectsContentElDescription{
+    width: 306px;
+    height: 321px;
+    position: relative;
+}
+
+.projectsContentElDescriptionTxt{
+    position: absolute;
+    bottom: 115px;
+}
+
+.projectsContentElDescriptionLink{
+    width: 42px;
+    height: 42px;
+    background-color: rgba(220, 145, 27, 1);
+    border: 2px solid rgba(220, 145, 27, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: black;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.projectsContentElDescriptionLink:hover{
+    color:  rgba(220, 145, 27, 1);
+    background-color: rgba(220, 145, 27, 0);
+    svg path{
+        stroke: rgba(220, 145, 27, 1);
+    }
+}
+
+
+.projectsContentElMid2{
+    background-image: url("img/project2.png");
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 556px;
+    height: 312px;
+    margin-left: 140px;
+}
+
+.projectsContentLinkAll{
+    display: flex;
+    justify-content: end;
+    font-size: 18px;
+}
+
+.projectsContentLinkAllA{
+    display: flex;
+    align-items: center;
+}
+
+.projectsContentLinkAllAOrange{
+    color: rgba(220, 145, 27, 1);
+    font-size: 44px;
+}
+
+/* сТИЛИ НОВОСТЕЙ */
+
+.newsContent{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 108px;
+}
+
+.newsContentHeader{
+    width: 189px;
+}
+
+.newsContentHeaderH{
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.newsContentHeaderImgDiv{
+    width: 289px;
+    height: 289px;
+    margin-right: 50px;
+}
+
+.newsContentNews{
+    background-color: rgba(237, 238, 239, 1);
+    padding: 80px 40px 80px 40px;
+}
+
+.newsContentNewsMenu{
+    display: flex;
+    justify-content: space-between;
+    width: 846px;
+}
+
+.newsContentNewsMenuEl{
+    width: 228px;
+}
+
+.newsContentNewsMenuElHeader{
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 16px;
+}
+
+.newsContentNewsMenuElDate{
+    font-size: 14px;
+    color: rgba(111, 111, 110, 1);
+    padding-bottom: 16px;
+}
+
+.newsContentNewsMenuElTxt{
+    font-size: 16px;
+    padding-bottom: 23px;
+}
+
+.newsContentNewsMenuElLink{
+    width: 42px;
+    height: 42px;
+    background-color: rgba(220, 145, 27, 1);
+    border: 2px solid rgba(220, 145, 27, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: black;
+    cursor: pointer;
+}
+
+.newsContentNewsMenuElLink:hover{
+    color:  rgba(220, 145, 27, 1);
+    background-color: rgba(220, 145, 27, 0);
+    svg path{
+        stroke: rgba(220, 145, 27, 1);
+    }
+}
+
+.newsContentNewsLinkAll{
+    display: flex;
+    justify-content: end;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 37px;
+}
+
+/* Вопросы стили */
+
+.quest{
+    padding-top: 100px;
+    background-image: url("img/questFon.svg");
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    margin-bottom: 200px;
+}
+
+.questContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.questContentImg{
+    height: 285px;
+}
+
+.questContentForm{
+    margin-left: -50px;
+    margin-right: -50px;
+}
+
+.questContentFormFon{
+    padding-top: 30px;
+    padding-left: 140px;
+    padding-right: 140px;
+    padding-bottom: -30px;
+    background-color: rgba(255, 224, 176, 1);
+    padding: 30px 140px -40px 140px;
+    margin-bottom: -20px;
+}
+
+.questContentFormH{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+.questContentFormTxt{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.questContentFormRow{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.questContentFormRowInput{
+    background-color: rgba(255, 224, 176, 0);
+    font-size: 12px;
+    border: 0px;
+    border-bottom: 1px solid rgba(220, 145, 27, 1);
+    padding-left: 10px;
+}
+
+.questContentFormBtnDiv{
+    display: flex;
+    justify-content: center;
+}
+
+.questContentFormBtn{
+    background-color: rgba(0, 0, 0, 0);
+    width: 161px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgba(220, 145, 27, 1);
+}
+
+/* Стили статьей */
+
+.statis{
+    padding-bottom: 100px;
+}
+
+.statisContentH{
+    font-weight: bold;
+    font-size: 36px;
+    padding-bottom: 90px;
+}
+
+.statisContentMenu{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+
+.statisContentMenuEl{
+    width: 245px;
+}
+
+.statisContentMenuElH{
+    font-weight: bold;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.statisContentMenuElDate{
+    font-size: 12px;
+    color: rgba(198, 198, 198, 1);
+    padding-bottom: 10px;
+}
+
+.statisContentMenuElTxt{
+    font-size: 12px;
+}
+
+.statisContentLink{
+    display: flex;
+    justify-content: end;
+}
+
+.statisContentLinkA{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Сертефикаты */
+
+.certificate{
+    background-color: rgba(62, 62, 61, 1);
+}
+
+.certificateContent{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -120px;
+}
+
+.certificateContentSliderH{
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    color: #fff;
+    padding-top: 125px;
+    padding-bottom: 106px;
+}
+
+.certificateContentSliderRow{
+    width: 820px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.certificateContentSliderRowImgDiv{
+    height: 242;
+}
+
+.certificateContentSliderComtrolMenu{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.certificateContentSliderComtrolMenuEl{
+    width: 42px;
+    height: 42px;
+    background-color: rgba(220, 145, 27, 1);
+    border: 2px solid rgba(220, 145, 27, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: black;
+    cursor: pointer;
+}
+
+.certificateContentSliderComtrolMenuEl:hover{
+    color:  rgba(220, 145, 27, 1);
+    background-color: rgba(220, 145, 27, 0);
+    svg path{
+        stroke: rgba(220, 145, 27, 1);
+    }
+}
+
+
+
+.certificateContentImg{
+    width: 484px;
+    height: 496px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-left: 20px;
+}
+
+.certificateLink{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.certificateLinkA{
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Стили блока клиенты */
+
+.clients{
+    padding-bottom: 93px;
+}
+
+.clientsContentH{
+    font-weight: bold;
+    font-size: 36px;
+    padding-top: 57px;
+    padding-left: 230px;
+    padding-bottom: 60px;
+}
+
+.clientsContentMenu{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.clientsContentMenuEl{
+    border: 1px solid rgba(242, 242, 242, 1);
+}
+
+.clientsContentMenuElImg{
+    width: 220px;
+    height: 60px;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* footer */
+
+.footer{
+    background-color: rgba(62, 62, 61, 1);
+    padding-top: 30px;
+}
+
+.footerContentRow{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(119, 126, 137, 1);
+    padding-bottom: 55px;
+}
+
+.footerContentRowMenuH{
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-size: 15;
+    color: #fff;
+}
+
+.footerContentRowMenuElA{
+    color: rgba(119, 126, 137, 1);
+    font-size: 14px;
+}
+
+.footerContentRowMenuSearch{
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+
+.footerContentRowMenuSearchInput{
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    padding-left: 18px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 13px;
+    width: 330px;
+    color: rgba(218, 218, 218, 1);
+}
+
+.footerContentRowMenuSearchBtn{
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    padding-right: 18px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.footerContentRowMenuContacts{
+    display: flex;
+    justify-content: space-between;
+}
+
+#footerContentRowMenuContactsColumnEl1{
+    position: relative;
+    padding-left: 15px;
+    background-image: expression(this.runtimeStyle.backgroundImage="none",
+    this.innerHTML = '<img alt="" src="img/email.svg" class="footerContentRowMenuContactsColumnEl1Img" id = "footerContentRowMenuContactsColumnEl1Img">'+this.innerHTML);
+}
+
+#footerContentRowMenuContactsColumnEl1::before,
+#footerContentRowMenuContactsColumnEl1Img{
+    position: absolute;
+    top: 0px;
+    left: -5px;
+    content: url(img/email.svg);
+}
+
+#footerContentRowMenuContactsColumnEl2{
+    position: relative;
+    padding-left: 15px;
+    background-image: expression(this.runtimeStyle.backgroundImage="none",
+    this.innerHTML = '<img alt="" src="img/pointer.svg" class="footerContentRowMenuContactsColumnEl1Img" id = "footerContentRowMenuContactsColumnEl2Img">'+this.innerHTML);
+}
+
+#footerContentRowMenuContactsColumnEl2::before,
+#footerContentRowMenuContactsColumnEl2Img{
+    position: absolute;
+    top: 0px;
+    left: -5px;
+    content: url(img/pointer.svg);
+}
+
+.footerContentRowMenuContactsColumn{
+    padding-top: 30px;
+}
+
+.footerContentRowMenuContactsColumnEl1{
+    display: flex;
+    gap: 5px;
+}
+
+.footerContentRowMenuContactsColumnEl1Img{
+    width: 16px;
+    height: 13px;
+}
+
+.footerContentRowMenuContactsColumnEl1Txt{
+    font-size: 14px;
+    text-decoration: dashed;
+    color: #fff;
+    padding-bottom: 22px;
+}
+
+.footerContentRowMenuContactsColumnTele{
+    gap: 10px;
+    align-items: center;
+}
+
+.footerContentRowMenuContactsColumnTeleImg{
+    width: 16px;
+    height: 16px;
+}
+
+#footerContentRowMenuContactsColumnTele{
+    position: relative;
+    padding-left: 15px;
+    background-image: expression(this.runtimeStyle.backgroundImage="none",
+  this.innerHTML = '<img alt="" src="img/tele.svg" class="footerContentRowMenuContactsColumnTeleImg" id="footerContentRowMenuContactsColumnTeleImg">'+this.innerHTML);
+}
+
+#footerContentRowMenuContactsColumnTele:before,
+#footerContentRowMenuContactsColumnTeleImg{
+    content: url(img/tele.svg);
+    position: absolute;
+    top: 0px;
+    left: -7px;
+}
+
+.footerContentRowMenuContactsColumnTxt{
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.footerContentRowMenuContactsColumnCall{
+    margin-top: 10px;
+    padding: 12px 22px;
+    background-color: rgba(253, 153, 19, 1);
+    color: #fff;
+    border-radius: 3px;
+}
+
+.footerContentSub{
+    display: flex;
+    gap: 290px;
+    padding-top: 55px;
+    padding-bottom: 40px;
+    align-items: center;
+}
+
+.footerContentSubRowMark{
+    font-size: 13px;
+    color: rgba(119, 126, 137, 1);
+}
